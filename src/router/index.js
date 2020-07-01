@@ -6,9 +6,14 @@ Vue.use(VueRouter)
   const routes = [
   
 	]
+	
 
 const router = new VueRouter({
   routes:[
+	  {
+		  path:'/',
+		  component:()=>import('../views/Parent.vue')
+	  },
 	  {
 		  path:'/home/:id',
 		  name:'home',
